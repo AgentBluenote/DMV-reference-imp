@@ -1,7 +1,8 @@
 
 package org.oracle.trails.driver;
 
-public class Driver {
+
+public class DriverVersion18 {
 	
 	public void Driver() {
 		// TODO Auto-generated constructor stub
@@ -22,16 +23,20 @@ public class Driver {
                                            // a constant and Integer() is immutable.
         
         System.out.println("auto_box " + AUTO_BOX_INT.intValue() );    
+        
     }
-	
-	
 	
 
 	public static void main(String... args) {
 
-	    Driver driver_1_8 = new Driver();
+	    DriverVersion18 driver_1_8 = new DriverVersion18();
 
 	    driver_1_8.test_final_modifier();
-	}
+        
+	    System.out.println("Inversion of Control and Dependancy Injection Example" );
+
+	
+	
+	}  // end of main
 
 }

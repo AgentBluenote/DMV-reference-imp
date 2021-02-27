@@ -216,7 +216,7 @@ public class RosterTest {
  
         printPersonsWithPredicate(
             roster,
-            p -> p.getGender() == Person.Sex.MALE
+            p -> p.getGender() == Person.Sex.MALE  
                 && p.getAge() >= 18
                 && p.getAge() <= 25
         );
@@ -261,10 +261,12 @@ public class RosterTest {
  
         processElements(
             roster,
+
             p -> p.getGender() == Person.Sex.MALE
                 && p.getAge() >= 18
                 && p.getAge() <= 25,
             p -> p.getEmailAddress(),
+
             email -> System.out.println(email)
         );
  
